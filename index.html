@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+
+
+ <head>
+
+<title> moot </title>
+
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+
+<style>
+body {
+
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ min-height: 100vh;
+ margin: 0;
+ text-align: center;
+ gap: 9px;
+ background-color:#008B8B;
+ font-family: "Cinzel", serif;
+}
+
+h2 {
+margin-bottom: 2px;
+font-family: "Cinzel", serif;
+}
+
+.desc {
+ font-size: 0.9em;
+ margin-top: 1px;
+ margin-bottom: 12px;
+ color: #555;
+ font-family: "Cinzel", serif;
+}
+
+h1 {
+font-family: "Great Vibes", cursive;
+
+
+}
+
+button {
+background-color:#008B8B;
+color: white;
+border: none;
+font-size: 1.2rem;
+}
+
+.leisure {
+display: none;
+}
+
+
+.tea {
+display: none;
+}
+
+
+
+
+
+</style>
+
+
+
+ </head>
+
+
+
+
+<body>
+
+
+<button id="myButton">☾</button>
+
+<script> 
+
+let menuVisable = true;
+
+document.getElementById("myButton").addEventListener("click", changeColor);
+
+
+function changeColor() {
+
+if (menuVisable) {
+
+document.querySelectorAll(".menu-item").forEach(function(item) {
+item.style.display = "none";
+
+});
+
+document.querySelectorAll(".desc").forEach(function(d) {
+d.style.display = "none";
+
+});
+
+document.querySelectorAll(".leisure").forEach(function(d) {
+d.style.display = "block";
+
+});
+
+document.querySelectorAll(".tea").forEach(function(d) {
+d.style.display = "block";
+
+});
+
+document.body.style.backgroundColor = "#800000" 
+
+menuVisable = false;
+
+} else {
+
+
+document.querySelectorAll(".menu-item").forEach(function(item) {
+item.style.display = "block";
+
+});
+
+document.querySelectorAll(".desc").forEach(function(d) {
+d.style.display = "block";
+
+});
+
+
+
+document.querySelectorAll(".leisure").forEach(function(d) {
+d.style.display = "none";
+
+});
+
+document.querySelectorAll(".tea").forEach(function(d) {
+d.style.display = "none";
+
+});
+
+document.body.style.backgroundColor = "#008B8B"
+
+menuVisable = true;
+ }
+
+}
+</script>
+
+
+
+<h1 style="font-size: 4rem;"> Moot </h1>
+
+
+
+<h2 class = "leisure"> Refreshments at the Manderley's </h2>
+<p class="tea"> Pomegranite tea, brown bread sandwiches, sour dough crumpets with jam, <br> miso tahini scones, and an assortment of small desserts</p>
+<p class="tea">- requires  three day notice</p>
+<p class="tea">- only be served after 8 pm</p>
+
+<h6 style = "color: white;" class="tea"> Those dripping crumpets, I can see them now. <br> Tiny crisp wedges of toast, and piping-hot,<br> flaky scones. Sandwiches of unknown nature,<br> mysteriously flavoured and quite delectable... <br> <span style="color: black;"> - Rebecca by Daphne du Maurier</span> </h6>
+
+
+ 
+
+
+<h2 class="menu-item"> Pot-Au-Feu </h2>
+<p class="desc"> Tender lamb chops floated in a shallow mint broth</p>
+
+<h2 class="menu-item"> Country Fried Chicken </h2>
+<p class="desc"> Pan-cooked chicken with a side of Rice and Beans or Fried Tomatoes</p>
+
+<h2 class="menu-item"> Sweet Soy Beef </h2>
+<p class="desc"> Braised beef and rice served with a side of Glazed Lotus Root or Stir-Fried Broccoli</p>
+
+<h2 class="menu-item"> Sonacho </h2>
+<p class="desc"> Beef stew with corn, plantains, and an assortment of root vegetables</p>
+
+<h2 class="menu-item"> Deviled Egg Flight </h2>
+<p class="desc"> Six devilled eggs in different styles served with Strawberry Gazpacho or Garden Salad</p>
+
+<h2 class="menu-item"> Congee </h2>
+<p class="desc"> Savory rice Porridge with pork or beef, topped with century egg or regular</p>
+
+<h2 class="menu-item"> Steak and Frites </h2>
+<p class="desc"> Honey basted steak with mushroom fries</p>
+
+
+<h2 class="menu-item"> Dessert </h2>
+
+<p class="menu-item"> Hummingbird cake </p>
+
+<p class="menu-item"> Almond Tofu </p>
+
+<p class="menu-item"> Mug Cake </p>
+
+<p class="menu-item"> Fresh Fruit </p>
+
+
+
+
+
+
+
+
+
+  <body/> 
+
+
+
+
+
+
+</html>
